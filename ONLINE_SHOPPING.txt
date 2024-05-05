@@ -1,0 +1,38 @@
+mysql> CREATE DATABASE ONLINE_SHOP;
+
+MYSQL> USE ONLINE_SHOP;
+
+mysql>  	CREATE TABLE LOGIN
+	(USER_NAME CHAR(30),
+	  PWD CHAR(30));
+
+mysql>	insert into LOGIN VALUES('ADMIN','HELLO');
+
+mysql> 	CREATE TABLE REG
+	(username char(30),
+	 email char(40),
+	 phoneno integer,
+	 password char(30));
+
+mysql>	CREATE TABLE ITEMS
+	(IT_NAME CHAR(30),
+	 QTY INTEGER,
+	 RATE integer);
+
+mysql>	CREATE TABLE BOOKING
+	(UNAME CHAR(30),
+	 INAME CHAR(30) NOT NULL,
+	 COST integer,
+	 STATUS CHAR(15));
+
+mysql>	CREATE TABLE CONFIRM
+	(NAME CHAR(30),
+	 ADDRESS CHAR(30),
+	 CITY CHAR(20),
+	 STATE CHAR(20),
+	 COUNTRY CHAR(20),
+	BILL_AMT float,
+	 C_DATE CHAR(15));
+
+
+
